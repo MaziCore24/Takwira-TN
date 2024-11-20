@@ -25,7 +25,7 @@ body{
     height: 500px;
     background-color: red;
     overflow: hidden;
-    background: lightblue no-repeat center / cover;
+    background: black no-repeat center / cover;
     border-radius:10px;
     box-shadow: 5px 20px 50px #000 ;
 
@@ -62,14 +62,14 @@ input{
     outline: none;
     border-radius: 5px;
 }
-button{
+#button{
     width: 60%;
     height: 40px;
     margin:10px auto;
     justify-content: center;
     display: block;
     color: #ffffff;
-    background: rgb(34, 160, 223);
+    background: #356DFF;
     font-size: 1em;
     font-weight: bold;
     margin-top: 9px;
@@ -80,9 +80,9 @@ button{
     cursor: pointer;
 
 }
-button:hover{
+#button:hover{
     background:white;
-    color: rgb(34, 160, 223);
+    color: #356DFF;
     transform: scale(1.25);
 }
 #s{
@@ -92,7 +92,7 @@ button:hover{
     justify-content: center;
     display: block;
     color: #ffffff;
-    background: rgb(34, 160, 223);
+    background: #356DFF;
     font-size: 1em;
     font-weight: bold;
     margin-top: 9px;
@@ -105,7 +105,7 @@ button:hover{
 }
 #s:hover{
     background:white;
-    color: rgb(34, 160, 223);
+    color: #356DFF;
     transform: scale(1.25);
 
 }
@@ -118,7 +118,7 @@ button:hover{
 
 }
 .login label{
-    color:rgb(34, 160, 223);
+    color:#356DFF;
     transform: scale(.6);
 }
 #chk:checked ~ .login{
