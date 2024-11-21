@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Football Field Reservation</title>
+    <script>
+        function touch(){
+            alert("your team has been reserve");
+        }
+    </script>
+</head>
+<body>
+    <h1>Football Field Reservation System</h1>
+
+    <!-- Form to add a team -->
+    <form method="POST" action="sign.php">
+        <h2>Add a Team</h2>
+        <label for="team_name">Team Name:</label>
+        <input type="text" name="team_name" required><br>
+        <label for="players">Players (comma-separated):</label>
+        <input type="text" name="players" placeholder="Player1, Player2, ..." required><br>
+        <input type="hidden" name="add_team" value="1">
+        <!-- <button type="submit">Add Team</button> -->
+        <a href="index.html"><input type="submit" id="button" value="Add Team"></a>
+    </form>
+
+    <!-- Form to make a reservation -->
+    <form method="POST" action="booking.php">
+        <h2>Make a Reservation</h2>
+        <label for="team1_id">Team 1 ID:</label>
+        <input type="number" name="team1_id" required><br>
+        <label for="team2_id">Team 2 ID:</label>
+        <input type="number" name="team2_id" required><br>
+        <label for="reservation_datetime">Reservation DateTime:</label>
+        <input type="datetime-local" name="reservation_datetime" required><br>
+        <input type="hidden" name="reserve_field" value="1">
+        <button type="submit" onclick="touch()">Reserve Field</button>
+    </form>
+</body>
+</html>
